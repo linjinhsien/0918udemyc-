@@ -15,13 +15,25 @@ namespace ex2
         static void table9to9()
         {
             Console.WriteLine("九九乘法表的內容");
-            for (int i = 1; i <= 9;i++)
-            { 
-                for (int j = 1; j <= 9; j++) 
+            for (int i = 1; i <= 9; i++)
+            {
+                for (int j = 1; j <= 9; j++)
                 {
-                    Console.WriteLine( i*j);
+                    Console.WriteLine($"{i} x {j} = {i * j}");
                 }
-                
+
+            }
+            Console.WriteLine("九九乘法表排列");
+            string line = "";
+            for (int i = 1; i <= 9; i++)
+            {
+                for (int j = 1; j <= 9; j++)
+                {
+                    line += $"{i} x {j} = {i * j}\t";
+                }
+                Console.WriteLine(line);
+
+               
             }
             Console.ReadKey();
         }
